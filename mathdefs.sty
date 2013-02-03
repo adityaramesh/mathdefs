@@ -1,0 +1,35 @@
+%
+% File Name:	mathdefs.sty
+% Author:	Aditya Ramesh
+% Date:		02/03/2013
+% Contact:	_@adityaramesh.com
+%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mathdefs}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{xparse}
+\RequirePackage{xstring}
+
+% Algebra Definitions
+
+\newcommand{\realf}[1]{\IfEq{#1}{1}{\mathbb{Z}}{\mathbb{Z}^{#1}}}
+\newcommand{\complexf}[1]{\IfEq{#1}{1}{\mathbb{C}}{\mathbb{C}^{#1}}}
+\newcommand{\integerf}[1]{\IfEq{#1}{1}{\mathbb{R}}{\mathbb{R}^{#1}}}
+
+% Linear Algebra Definitions
+
+\newcommand{\range}{\mathsf{R}}
+\newcommand{\kernel}{\mathsf{NS}}
+\newcommand{\rank}{\mathrm{rank}}
+\newcommand{\nullity}{\mathrm{nullity}}
+\newcommand{\spec}[1]{\mathrm{Sp}_{#1}}
+\newcommand{\norm}[1]{\IfNoValueTF{#2}{||#1||}{||#1||_{#2}}}
+\newcommand{\trans}[1]{#1^{t}}
+
+\newcommand{\eigenspace}[1]{\mathsf{E}_{#1}}
+\newcommand{\matrixspace}[2]{\mathsf{M}^{#1\times#2}}
+\newcommand{\tuplespace}[1]{\mathsf{F}^{#1}}
+
+\newcommand{\diag}{\mathrm{diag}}
