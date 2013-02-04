@@ -10,7 +10,13 @@
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{smatrix}
+\RequirePackage{mathtools}
 \RequirePackage{xstring}
+
+% Paired Delimiters
+
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
 
 % Algebra Definitions
 
@@ -25,7 +31,6 @@
 \newcommand{\rank}{\mathrm{rank}}
 \newcommand{\nullity}{\mathrm{nullity}}
 \newcommand{\spec}[1]{\mathrm{Sp}_{#1}}
-\newcommand{\norm}[1]{||#1||}
 \newcommand{\trans}[1]{#1^{t}}
 
 \newcommand{\eigenspace}[1]{\mathsf{E}_{#1}}
