@@ -9,14 +9,14 @@
 \ProvidesPackage{mathdefs}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
-\RequirePackage{xparse}
+\RequirePackage{smatrix}
 \RequirePackage{xstring}
 
 % Algebra Definitions
 
-\newcommand{\realf}[1]{\IfEq{#1}{1}{\mathbb{Z}}{\mathbb{Z}^{#1}}}
+\newcommand{\realf}[1]{\IfEq{#1}{1}{\mathbb{R}}{\mathbb{R}^{#1}}}
 \newcommand{\complexf}[1]{\IfEq{#1}{1}{\mathbb{C}}{\mathbb{C}^{#1}}}
-\newcommand{\integerf}[1]{\IfEq{#1}{1}{\mathbb{R}}{\mathbb{R}^{#1}}}
+\newcommand{\integerf}[1]{\IfEq{#1}{1}{\mathbb{Z}}{\mathbb{Z}^{#1}}}
 
 % Linear Algebra Definitions
 
@@ -25,7 +25,7 @@
 \newcommand{\rank}{\mathrm{rank}}
 \newcommand{\nullity}{\mathrm{nullity}}
 \newcommand{\spec}[1]{\mathrm{Sp}_{#1}}
-\newcommand{\norm}[1]{\IfNoValueTF{#2}{||#1||}{||#1||_{#2}}}
+\newcommand{\norm}[1]{||#1||}
 \newcommand{\trans}[1]{#1^{t}}
 
 \newcommand{\eigenspace}[1]{\mathsf{E}_{#1}}
