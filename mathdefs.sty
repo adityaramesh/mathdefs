@@ -70,21 +70,33 @@
 \newcommand{\integerg}[1]{\IfEq{#1}{1}{\field{Z}}{\field{Z}^{#1}}}
 \newcommand{\qsp}[2]{#1 /\, #2}
 
+%
 % Linear Algebra Definitions
+%
 
-\newcommand{\vsp}[1]{\mathsf{#1}}
-\newcommand{\lint}[1]{\mathsf{#1}}
-\newcommand{\vspan}{\mathrm{span}}
-\newcommand{\fspan}[1]{#1\mathrm{-}\vspan}
-\newcommand{\range}{\mathsf{R}}
-\newcommand{\kernel}{\mathsf{NS}}
-\newcommand{\rank}{\mathrm{rank}}
-\newcommand{\nullity}{\mathrm{nullity}}
-\newcommand{\spec}[1]{\mathrm{Sp}_{#1}}
+% Vector Spaces.
+
+\newcommand{\vspan}{\operatorname{span}}
+\newcommand{\fspan}[1]{\operatorname{#1-span}}
+\newcommand{\polyspace}[1]{\operatorname{\mathsf{P}^{#1}}}
+\newcommand{\tuplespace}[1]{\operatorname{\mathsf{F}^{#1}}}
+\newcommand{\matrixspace}[2]{\operatorname{\mathsf{M}^{#1 \times #2}}}
+
+% Linear Transformations.
+
+\newcommand{\range}{\operatorname{\mathsf{R}}}
+\newcommand{\kernel}{\operatorname{\mathsf{N}}}
+\newcommand{\nullspace}{\operatorname{\mathsf{N}}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\nullity}{\operatorname{\mathrm{nullity}}}
+
+% Matrices.
+
+\newcommand{\diag}{\operatorname{diag}}
 \newcommand{\trans}[1]{#1^{t}}
+\newcommand{\Tr}{\operatorname{Tr}}
 
-\newcommand{\eigenspace}[1]{\mathsf{E}_{#1}}
-\newcommand{\matrixspace}[2]{\mathsf{M}^{#1\times#2}}
-\newcommand{\tuplespace}[1]{\mathsf{F}^{#1}}
+% Eigenvalues and Diagonazibility.
 
-\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\spec}[1]{\operatorname{Sp_{#1}}}
+\newcommand{\eigenspace}[1]{\operatorname{\mathsf{E}_{#1}}}
