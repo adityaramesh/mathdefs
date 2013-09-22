@@ -23,11 +23,11 @@
 % Theorem Environments
 
 \theoremstyle{definition}
-\newtheorem{definition}{Definition}
 \newtheorem{example}{Example}
 \newtheorem{exercise}{Exercise}
 
 \theoremstyle{plain}
+\newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
@@ -66,9 +66,11 @@
 \let\hom\relax
 \DeclareMathOperator{\hom}{Hom}
 \newcommand{\field}[1]{\mathbb{#1}}
-\newcommand{\realf}[1]{\protect\IfEq{#1}{1}{\field{R}}{\field{R}^{#1}}}
-\newcommand{\complexf}[1]{\protect\IfEq{#1}{1}{\field{C}}{\field{C}^{#1}}}
-\newcommand{\integerg}[1]{\protect\IfEq{#1}{1}{\field{Z}}{\field{Z}^{#1}}}
+\newcommand{\naturals}[1]{\protect\IfEq{#1}{1}{\field{N}}{\field{N}^{#1}}}
+\newcommand{\integers}[1]{\protect\IfEq{#1}{1}{\field{Z}}{\field{Z}^{#1}}}
+\newcommand{\rationals}[1]{\protect\IfEq{#1}{1}{\field{Q}}{\field{Q}^{#1}}}
+\newcommand{\reals}[1]{\protect\IfEq{#1}{1}{\field{R}}{\field{R}^{#1}}}
+\newcommand{\complexes}[1]{\protect\IfEq{#1}{1}{\field{C}}{\field{C}^{#1}}}
 \newcommand{\qsp}[2]{#1 /\, #2}
 
 %
